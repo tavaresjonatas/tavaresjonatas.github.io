@@ -15,47 +15,61 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    #posicao1 {
-        position: absolute;
-        right: 150px;
-        left: 150px;
-    }
-    #posicao2 {
-        position: absolute;
-        right: 150px;
-        left: 150px;
-        top: 1050px
-    }
 </style>
 
-<body background-image: url(Imagens/Fundo.jpg)>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Jônatas Tavares</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Início<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="sobre.html">Sobre</a>
-                <a class="nav-item nav-link active" href="academico.html">Acadêmico</a>
-                <a class="nav-item nav-link active" href="fotos.html">Fotos</a>
-            </div>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mb-0 h1" href="index.html">Jônatas Tavares</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="academico.html">Acadêmico</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="fotos.html">Fotos</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contato
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://github.com/TavaresJonatas" target="self">GitHub</a>
+                        <a class="dropdown-item" href="https://repl.it/@JonatasTavares" target="self">Repl.it</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/jtavares.py/"
+                            target="self">Instagram</a>
+                        <a class="dropdown-item" href="https://wwww.facebook.com/jonatas.tavares123"
+                            target="self">Facebook</a>
+                        <a class="dropdown-item" href="mailto:jonatast360@gmail.com" target="self">E-mail</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <br><br>
     <div class="jumbotron">
         <h1 class="display-4">Jônatas Tavares dos Santos</h1>
-        <p class="lead">Concluiu o Ensino Fundamental no ano de 2017 e atualmente é acadêmico do 2º ano do Curso Técnico em Informática Integrado
+        <p class="lead">Concluiu o Ensino Fundamental no ano de 2017 e atualmente é acadêmico do 2º ano do Curso Técnico
+            em Informática Integrado
             ao Ensino Médio do IFPB - Campus Campina Grande.</p>
         <hr class="my-4">
-        <p>Um simples jovem de 15 anos que faz coisas como qualquer outro.</p>
+        <p class="lead">Um simples jovem de 15 anos, cheio de sonhos que faz coisas como qualquer outro.</p>
         <a class="btn btn-primary btn-lg" href="fotos.html" role="button">Algumas fotos</a>
     </div>
 
-    <div class="card-deck" id="posicao1">
+    <br>
+    <div class="card-deck">
         <div class="card">
             <img src="Imagens/Estudar.jpg" class="card-img-top" alt="Estudar">
             <div class="card-body">
@@ -80,7 +94,21 @@
     </div>
 
     <br><br>
-    <div class="card-deck" id="posicao2">
+    <div class="card-deck">
+        <div class="card">
+            <img src="Imagens/Programar.jpg" class="card-img-top" alt="Programar">
+            <div class="card-body">
+                <h5 class="card-title">Programar</h5>
+                <p class="card-text">Escrever algo novo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Imagens/FilmesSeries.jpg" class="card-img-top" alt="Filmes e Séries">
+            <div class="card-body">
+                <h5 class="card-title">Filmes e Séries</h5>
+                <p class="card-text">São ótimas formas de entretenimento.</p>
+            </div>
+        </div>
         <div class="card">
             <img src="Imagens/Animais.jpg" class="card-img-top" alt="Animais">
             <div class="card-body">
@@ -88,27 +116,22 @@
                 <p class="card-text">Animais são seres incríveis.</p>
             </div>
         </div>
-        <div class="card">
-            <img src="Imagens/Aprender.jpg" class="card-img-top" alt="Aprender coisas novas">
-            <div class="card-body">
-                <h5 class="card-title">Aprender coisas novas</h5>
-                <p class="card-text">Sempre que posso, gosto de estar aprendendo coisas novas.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="Imagens/Ler.jpg" class="card-img-top" alt="Ler">
-            <div class="card-body">
-                <h5 class="card-title">Ler</h5>
-                <p class="card-text">A leitura é algo de que gosto.</p>
-            </div>
-        </div>
     </div>
+    <br><br>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <nav class="navbar bottom navbar-dark bg-dark">
+        <a href="https://github.com/TavaresJonatas" target="self">Copyright © 2019- 2019 Jônatas Tavares. All Rights
+            Reserved.</a>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
 
